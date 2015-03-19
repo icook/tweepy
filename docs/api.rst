@@ -85,6 +85,22 @@ Timeline methods
    :param count: |count|
    :param page: |page|
    :rtype: list of :class:`Status` objects
+   
+   
+.. method:: API.mentions_timeline([since_id], [max_id], [count])
+
+   Returns the 20 most recent mentions (tweets containing
+   a users’s @screen_name) for the authenticating user.
+
+   The timeline returned is the equivalent of the one seen when
+   you view your mentions on twitter.com.
+
+   This method can only return up to 800 tweets.
+
+   :param since_id: |since_id|
+   :param max_id: |max_id|
+   :param count: |count|
+   :rtype: list of :class:`Status` objects
 
 
 Status methods
